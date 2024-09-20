@@ -1,0 +1,225 @@
+body {
+    background-color: rgb(146, 204, 249);
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.item-box-1 {
+    background-color: rgb(98, 42, 111); 
+    padding:  10px ;
+    padding-top: 10px;
+    border-radius: 30px;
+    
+}
+
+.item-box-2 {
+    background-color: rgb(98, 42, 111); 
+    padding: 20px; 
+    border-radius: 30px;
+    height: auto;
+    margin: 2px;
+}
+
+.item-box-3 {
+    background-color: rgb(234, 57, 189); 
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 30px;
+    margin: 2px;
+}
+
+header nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+nav .navbar {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navbar .logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(121, 21, 193); /* ตั้งสีพื้นหลัง */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* จัดรูปภาพให้อยู่ตรงกลาง */
+}
+
+.navbar .logo img {
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 3px;
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(121, 21, 193);
+    border-radius: 40px;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(247, 245, 245);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+    transition: background-color 0.3s;
+    
+}
+
+.menu li a:hover {
+    background-color: rgb(225, 217, 123);
+}
+
+.navbar .menu-link {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu-link li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu-link li a {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+}
+.menu-link li:first-child {
+    border-right: 2px solid white; /* เส้นขั้นตรงกลาง */
+    padding-right: 15px; /* เพิ่มพื้นที่ด้านขวาให้ห่างจากเส้น */
+}
+
+.menu-link li:last-child {
+    padding-left: 5px; /* เพิ่มพื้นที่ด้านซ้ายให้ห่างจากเส้น */
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ชิดซ้าย */
+    justify-content: flex-start; /* ชิดบน */
+    text-align: left;
+    padding: 0; /* ลบ padding ที่นี่ถ้าไม่ต้องการ */
+    width: 100%; /* ขยายให้เต็มความกว้าง */
+}
+
+.title-banner {
+    display: flex;
+    align-items: center; /* จัดกลางแนวนอน */
+}
+
+.candle {
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่าง "MAGIC" กับรูป */
+}
+
+.title-banner .banner img {
+    height: 100px; /* ปรับขนาดตามที่ต้องการ */
+    width: auto;
+    border-radius: 50px;
+}
+.item-box-2 h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+.item-box-2 h2 {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    margin-top: 1px;
+}
+.menu-toggle {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: rgb(238, 240, 238);
+    cursor: pointer; /* ให้มองเห็นว่าคลิกได้ */
+    font-size: 20px; /* ขนาดของแท็บ */
+    margin-top: 10px; /* ระยะห่างจากข้อความด้านบน */
+    color: rgb(0, 0, 0); /* สีของแท็บ */
+    transition: color 0.3s; /* เพิ่มการเปลี่ยนสี */
+}
+
+.menu-toggle:hover {
+    color: rgb(157, 160, 157); /* สีเมื่อชี้เมาส์ */
+}
+.scroll-down1 {
+    position: absolute; /* ทำให้สามารถเคลื่อนที่ไปที่มุมขวา */
+    right: 65px; /* ระยะห่างจากขอบขวา */
+    bottom: 20px; /* ระยะห่างจากขอบล่าง */
+    background-color: rgb(121, 21, 193); /* สีพื้นหลัง */
+    color: rgb(254, 253, 253); /* สีข้อความ */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 20px; /* ขอบมน */
+    padding: 10px 15px; /* ระยะห่างภายใน */
+    font-size: 18px; /* ขนาดข้อความ */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+    transition: background-color 0.3s; /* เปลี่ยนสีพื้นหลังเมื่อชี้ */
+    font-family: "Gowun Batang", serif;
+}
+
+.scroll-down1:hover {
+    background-color: rgb(250, 234, 66); /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+.scroll-down2 {
+    position: absolute; /* ทำให้สามารถเคลื่อนที่ไปที่มุมขวา */
+    right: 20px; /* ระยะห่างจากขอบขวา */
+    bottom: 20px; /* ระยะห่างจากขอบล่าง */
+    background-color: rgb(121, 21, 193); /* สีพื้นหลัง */
+    color: rgb(255, 253, 253); /* สีข้อความ */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 20px; /* ขอบมน */
+    padding: 10px 15px; /* ระยะห่างภายใน */
+    font-size: 18px; /* ขนาดข้อความ */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+    transition: background-color 0.3s; /* เปลี่ยนสีพื้นหลังเมื่อชี้ */
+}
+
+.scroll-down2:hover {
+    background-color: rgb(250, 234, 66); /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* จัด 2 รูปในแต่ละแถว */
+    gap: 10px; /* ระยะห่างระหว่างรูป */
+    width: 100%;
+}
+
+.image-grid a {
+    display: block;
+    width: 100%;
+     /* ขนาดรูปภาพที่ต้องการ */
+    border-radius: 20px; /* ขอบมน */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* ปรับรูปให้อยู่ในขนาดที่กำหนดโดยไม่ผิดสัดส่วน */
+}
+
+.image-grid a:hover {
+    transform: scale(1.05); /* ขยายขนาดเมื่อชี้เมาส์ */
+}
